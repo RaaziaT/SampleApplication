@@ -5,6 +5,16 @@
 
     <data>
 
+        <import type="android.view.View" />
+
+        <variable
+            name="clickInterface"
+            type="com.raaziat.sampleapplication.GotoSecondScreen" />
+
+        <variable
+            name="setButtonText"
+            type="String" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,7 +26,8 @@
             android:id="@+id/button_signup"
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_50sdp"
-            android:text="Sign Up Activity"
+            android:onClick="@{()->clickInterface.openSecondScreen()}"
+            android:text="@{setButtonText}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

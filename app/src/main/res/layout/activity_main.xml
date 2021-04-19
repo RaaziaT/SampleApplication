@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
 
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -58,8 +60,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:text="First Name" />
+                    android:text="First Name"
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -69,9 +71,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:text="Last Name" />
+                    android:text="Last Name"
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -81,9 +83,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:text="Email Address" />
+                    android:text="Email Address"
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -94,8 +96,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:textColor="@color/black"
-                    android:text="Password" />
+                    android:text="Password"
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -106,8 +108,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:textColor="@color/black"
-                    android:text="Confirm Password" />
+                    android:text="Confirm Password"
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -118,8 +120,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:textColor="@color/black"
-                    android:text="Gender" />
+                    android:text="Gender"
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -129,25 +131,25 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:text="Phone Number" />
+                    android:text="Phone Number"
+                    android:textColor="@color/black" />
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Type your phone number" />
-                
-                
+
+
                 <TextView
                     android:layout_width="@dimen/_85sdp"
                     android:layout_height="@dimen/_28sdp"
-                    android:layout_marginTop="@dimen/_12sdp"
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/black_rectangle"
                     android:gravity="center"
                     android:text="SINGUP"
-                    android:background="@drawable/black_rectangle"/>
+                    android:textColor="@color/white" />
 
 
             </LinearLayout>

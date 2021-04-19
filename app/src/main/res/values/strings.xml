@@ -2,4 +2,5 @@
     <string name="app_name">SampleApplication</string>
     <string name="hello_world">Hello!</string>
     <string name="create_account">CREATE ACCOUNT</string>
+    <string name="sign_up_activity">Sign Up Activity</string>
 </resources>
