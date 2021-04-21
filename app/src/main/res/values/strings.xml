@@ -3,4 +3,8 @@
     <string name="hello_world">Hello!</string>
     <string name="create_account">CREATE ACCOUNT</string>
     <string name="sign_up_activity">Sign Up Activity</string>
+    <string name="login_to_the_application">Login To The Application</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="log_in">Log in</string>
 </resources>

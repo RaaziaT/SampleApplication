@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
                     new String[]{android.Manifest.permission.CAMERA},
                     1);
         }
-
     }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
