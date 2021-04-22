@@ -22,12 +22,11 @@
         android:layout_height="match_parent"
         tools:context=".LoginActivity">
 
-        <Button
+        <ImageView
             android:id="@+id/button_signup"
-            android:layout_width="@dimen/_100sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:onClick="@{()->clickInterface.openSecondScreen()}"
-            android:text="@{setButtonText}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/sample_1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
