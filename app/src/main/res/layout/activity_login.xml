@@ -22,12 +22,12 @@
         android:layout_height="match_parent"
         tools:context=".LoginActivity">
 
-        <ImageView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/button_signup"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@mipmap/sample_1"
-            app:layout_constraintBottom_toBottomOf="parent"
+            tools:listitem="@layout/item_view"
+            tools:itemCount="4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

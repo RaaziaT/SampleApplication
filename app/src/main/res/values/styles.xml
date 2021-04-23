@@ -18,12 +18,12 @@
     </style>
 
     <style
-        name="SplashTheme"
-        parent="AppTheme">
+        name="SplashTheme" parent="AppTheme">
         <item name="android:windowFullscreen">true</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="ButtonStyle" parent="android:style/Widget.Button">
         <item name="android:textSize">19sp</item>
         <item name="android:textColor">#fff</item>
@@ -33,8 +33,7 @@
 
 
     <style
-        name="SecondTheme"
-        parent="AppTheme">
+        name="SecondTheme" parent="AppTheme">
         <item name="android:windowFullscreen">false</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
