@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 import com.raaziat.sampleapplication.databinding.ActivityLoginBinding;
@@ -17,6 +18,7 @@ public class LoginActivity extends AppCompatActivity {
 //} GotoSecondScreen {
 
     ActivityLoginBinding activityLoginBinding;
+    String[] strings = new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +27,12 @@ public class LoginActivity extends AppCompatActivity {
 
         ImageViewAdapter imageViewAdapter = new ImageViewAdapter();
         GridLayoutManager linearLayoutManager = new GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false);
-        activityLoginBinding.buttonSignup.setLayoutManager(linearLayoutManager);
-        activityLoginBinding.buttonSignup.setAdapter(imageViewAdapter);
+//        activityLoginBinding.buttonSignup.setLayoutManager(linearLayoutManager);
+//        activityLoginBinding.buttonSignup.setAdapter(imageViewAdapter);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, strings);
+        CustomAdapter customAdapter = new CustomAdapter(this);
+
+        activityLoginBinding.listViewNumbers.setAdapter(customAdapter);
 
 //        activityLoginBinding.buttonSignup.setOnClickListener(new View.OnClickListener() {
 //            @Override

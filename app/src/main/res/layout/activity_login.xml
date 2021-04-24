@@ -22,15 +22,24 @@
         android:layout_height="match_parent"
         tools:context=".LoginActivity">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/button_signup"
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/button_signup"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:listitem="@layout/item_view"-->
+<!--            tools:itemCount="4"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <ListView
+            android:id="@+id/listView_numbers"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/item_view"
-            tools:itemCount="4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"/>
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
