@@ -14,6 +14,11 @@ import com.raaziat.sampleapplication.databinding.ItemViewBinding;
 public class ImageViewAdapter extends RecyclerView.Adapter<ImageViewAdapter.ImageViewHolder> {
 
     String[] strings = new String[]{"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+    private  RecyclerViewCLickListener recyclerViewCLickListener;
+
+    public ImageViewAdapter(RecyclerViewCLickListener recyclerViewCLickListener){
+        this.recyclerViewCLickListener = recyclerViewCLickListener;
+    }
 
     @NonNull
     @Override
@@ -26,6 +31,12 @@ public class ImageViewAdapter extends RecyclerView.Adapter<ImageViewAdapter.Imag
     @Override
     public void onBindViewHolder(@NonNull ImageViewHolder holder, int position) {
         holder.itemViewBinding.txtViewHeading.setText(strings[position]);
+        holder.itemViewBinding.txtViewHeading.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recyclerViewCLickListener.onItemClick(strings[position]);
+            }
+        });
     }
 
     @Override
@@ -41,5 +52,9 @@ public class ImageViewAdapter extends RecyclerView.Adapter<ImageViewAdapter.Imag
             super(itemViewBinding.getRoot());
             this.itemViewBinding = itemViewBinding;
         }
+    }
+
+    public interface RecyclerViewCLickListener {
+        void onItemClick(String string);
     }
 }

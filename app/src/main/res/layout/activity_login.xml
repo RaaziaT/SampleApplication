@@ -22,24 +22,82 @@
         android:layout_height="match_parent"
         tools:context=".LoginActivity">
 
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/button_signup"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            tools:listitem="@layout/item_view"-->
-<!--            tools:itemCount="4"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-        <ListView
-            android:id="@+id/listView_numbers"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkbox" />
+
+        <Switch
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toggle"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/button_signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_button"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_view" />
+
+        <!--        <ListView-->
+        <!--            android:id="@+id/listView_numbers"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"/>-->
+
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="@dimen/_180sdp"-->
+        <!--            android:layout_height="@dimen/_50sdp"-->
+        <!--            android:background="@drawable/spinner_border"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--            <Spinner-->
+        <!--                android:id="@+id/spinner_country"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_centerVertical="true"-->
+        <!--                android:layout_alignParentLeft="true"-->
+        <!--                android:background="@android:color/transparent"-->
+        <!--                android:layout_marginLeft="5dp"-->
+        <!--                android:spinnerMode="dropdown" />-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="@dimen/_50sdp"-->
+        <!--                android:layout_height="@dimen/_40sdp"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:layout_centerVertical="true"-->
+        <!--                android:src="@mipmap/drop_down" />-->
+
+        <!--        </RelativeLayout>-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
