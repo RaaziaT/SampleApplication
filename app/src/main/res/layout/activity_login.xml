@@ -22,6 +22,12 @@
         android:layout_height="match_parent"
         tools:context=".LoginActivity">
 
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp" />
+
 
         <CheckBox
             android:id="@+id/checkbox"
@@ -30,7 +36,7 @@
             android:layout_marginTop="@dimen/_16sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
         <ToggleButton
             android:id="@+id/toggle"
@@ -48,7 +54,31 @@
             android:layout_marginTop="@dimen/_16sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toggle"/>
+            app:layout_constraintTop_toBottomOf="@+id/toggle" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch_button">
+
+            <RadioButton
+                android:id="@+id/radioButtonOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+
+        </RadioGroup>
 
 
         <androidx.recyclerview.widget.RecyclerView
@@ -59,7 +89,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/switch_button"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
             tools:itemCount="4"
             tools:listitem="@layout/item_view" />
 

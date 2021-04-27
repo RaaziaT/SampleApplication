@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import com.raaziat.sampleapplication.databinding.ActivityLoginBinding;
@@ -38,8 +39,23 @@ public class LoginActivity extends AppCompatActivity {
         // Specify the layout to use when the list of choices appears
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
+        activityLoginBinding.toolbar.txtViewHeading.setText("Login Activity");
+
         activityLoginBinding.checkbox.setOnCheckedChangeListener((buttonView, isChecked) ->
                 Toast.makeText(LoginActivity.this, "Item isChecked " + (isChecked ? "true" : "false"), Toast.LENGTH_SHORT).show());
+
+
+        activityLoginBinding.radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                if (checkedId == activityLoginBinding.radioButtonOne.getId()) {
+                    Toast.makeText(LoginActivity.this, "Item isChecked " + activityLoginBinding.radioButtonOne.getText().toString(), Toast.LENGTH_SHORT).show();
+                } else if (checkedId == activityLoginBinding.radioButtonTwo.getId()) {
+                    Toast.makeText(LoginActivity.this, "Item isChecked " + activityLoginBinding.radioButtonTwo.getText().toString(), Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
 
 //        activityLoginBinding.spinnerCountry.setAdapter(arrayAdapter);..................0
 
